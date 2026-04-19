@@ -3,185 +3,72 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Amelia Caroline Hedtke Newspaper Record</title>
-  <meta name="description" content="Public genealogy page for selecting Amelia Caroline Hedtke entries from the Carver County Historical Society Newspaper Resource and reviewing linked evidence in a spiderable, AI-readable format.">
-  <meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1">
-  <link rel="canonical" href="https://luedtkerice.j03.page/amelia-caroline-hedtke.html">
-  <meta property="og:title" content="Amelia Caroline Hedtke Newspaper Record">
-  <meta property="og:description" content="Select and review Amelia Caroline Hedtke newspaper-resource entries from the Carver County Historical Society source list.">
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://luedtkerice.j03.page/amelia-caroline-hedtke.html">
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "WebPage",
-    "name": "Amelia Caroline Hedtke Newspaper Record",
-    "url": "https://luedtkerice.j03.page/amelia-caroline-hedtke.html",
-    "description": "Genealogy research page that selects Amelia Caroline Hedtke results from the Carver County Historical Society Newspaper Resource and displays them with context."
-  }
-  </script>
+  <title>Amelia Caroline Hedtke Record Viewer</title>
+  <meta name="description" content="Public genealogy viewer for Amelia Caroline Hedtke records from the Carver County Historical Society Newspaper Resource.">
 </head>
 <body>
-  <header>
-    <h1>Amelia Caroline Hedtke Newspaper Record</h1>
-    <p><strong>Intro:</strong> This page is part of a public genealogy workflow focused on figuring out how Amelia Caroline Hedtke fits into a Hedtke to Luedtke DNA line. The record list below is pulled from a separate data file hosted at <em>luedtkerice.j03.page</em>, so the page can keep pointing back to the same research source even if this HTML file is copied elsewhere.</p>
-    <p>This page is written in plain HTML so search engines, AI tools, and human visitors can quickly understand what it is about: Amelia Caroline Hedtke, the Carver County Historical Society Newspaper Resource, and related public genealogy evidence links.</p>
-  </header>
+  <h1>Amelia Caroline Hedtke Record Viewer</h1>
 
-  <main>
-    <section>
-      <h2>Select a record</h2>
-      <label for="recordPicker">Amelia Caroline Hedtke entries from Carver County Historical Society:</label>
-      <select id="recordPicker">
-        <option value="">Loading records...</option>
-      </select>
-      <p id="datasetStatus"><strong>Dataset status:</strong> Waiting for data file.</p>
-      <p id="modifiedStatus"><strong>Modification check:</strong> Not checked yet.</p>
-    </section>
+  <p><strong>Intro:</strong> This page loads Amelia Caroline Hedtke research data from the live Luedtke Rice site.</p>
 
-    <section>
-      <h2>Displayed record</h2>
-      <article id="recordDisplay">
-        <p>The selected Amelia Caroline Hedtke record will appear here.</p>
-      </article>
-    </section>
+  <div id="status">Loading dataset...</div>
+  <div id="output"></div>
 
-    <section>
-      <h2>Spiderable summary</h2>
-      <p>This page currently expects to display the following Amelia Caroline Hedtke resource targets from the Carver County Historical Society Newspaper Resource:</p>
-      <ol>
-        <li><a href="https://www.carvercountyhistoricalsociety.org/newspaper/search.php?SearchText=hedtke&amp;Start=201&amp;utm_source=chatgpt.com">Carver County Historical Society Newspaper Resource Search — Amelia Caroline Hedtke result set starting at 201</a></li>
-        <li><a href="https://www.carvercountyhistoricalsociety.org/newspaper/search.php?SearchText=hedtke&amp;Start=181&amp;utm_source=chatgpt.com">Carver County Historical Society Newspaper Resource Search — Amelia Caroline Hedtke result set starting at 181</a></li>
-      </ol>
-      <p>Those links are included directly in the HTML so crawlers and AI systems can still see the target topic even before JavaScript runs.</p>
-    </section>
+  <p><strong>Exit:</strong> Review the record details and compare them against your source list and public research notes.</p>
 
-    <section>
-      <h2>Exit</h2>
-      <p><strong>Exit:</strong> This Amelia Caroline Hedtke page is a stepping stone in the larger question of how the Hedtke line may connect into the Luedtke line and eventually into a DNA-confirmed ancestor path. When more public records are added to the hosted data file, this page should automatically reflect the newer version and mark that the source data was modified.</p>
-    </section>
-  </main>
-
-  <script src="https://luedtkerice.j03.page/amelia-caroline-hedtke-data.js"></script>
   <script>
-  (function () {
-    var picker = document.getElementById('recordPicker');
-    var display = document.getElementById('recordDisplay');
-    var datasetStatus = document.getElementById('datasetStatus');
-    var modifiedStatus = document.getElementById('modifiedStatus');
+    (function () {
+      var script = document.createElement("script");
+      script.src = "https://luedtkerice.j03.page/amelia-caroline-hedtke-data.js";
+      script.async = false;
 
-    function escapeHtml(value) {
-      return String(value || '')
-        .replace(/&/g, '&amp;')
-        .replace(/</g, '&lt;')
-        .replace(/>/g, '&gt;')
-        .replace(/"/g, '&quot;')
-        .replace(/'/g, '&#39;');
-    }
+      script.onload = function () {
+        var status = document.getElementById("status");
+        var output = document.getElementById("output");
 
-    function asParagraph(label, value) {
-      if (!value) return '';
-      return '<p><strong>' + escapeHtml(label) + ':</strong> ' + escapeHtml(value) + '</p>';
-    }
-
-    function asLink(label, value) {
-      if (!value) return '';
-      var safe = escapeHtml(value);
-      return '<p><strong>' + escapeHtml(label) + ':</strong> <a href="' + safe + '">' + safe + '</a></p>';
-    }
-
-    function renderRecord(record) {
-      if (!record) {
-        display.innerHTML = '<p>No Amelia Caroline Hedtke record is currently selected.</p>';
-        return;
-      }
-      display.innerHTML =
-        '<h3>' + escapeHtml(record.title || 'Untitled record') + '</h3>' +
-        asParagraph('Record ID', record.record_id) +
-        asParagraph('Person names', record.person_names) +
-        asParagraph('Site name', record.site_name) +
-        asParagraph('Record type', record.record_type) +
-        asParagraph('Collection name', record.collection_name) +
-        asParagraph('Publisher or archive', record.publisher_or_archive) +
-        asParagraph('Event year', record.event_year) +
-        asParagraph('Location', record.location) +
-        asParagraph('Access mark', record.access_mark) +
-        asParagraph('Verified public now', record.verified_public_now) +
-        asParagraph('Notes', record.notes) +
-        asLink('Final URL', record.final_url) +
-        asLink('Original URL', record.original_url) +
-        asLink('Alternative public URL', record.alt_public_url);
-    }
-
-    function init() {
-      if (!window.LUEDTKE_RICE_DATA || !window.LUEDTKE_RICE_DATA.records) {
-        datasetStatus.innerHTML = '<strong>Dataset status:</strong> Data file did not load. If this page is copied elsewhere, keep the hosted data file available at luedtkerice.j03.page.';
-        picker.innerHTML = '<option value="">Data file not loaded</option>';
-        return;
-      }
-
-      var data = window.LUEDTKE_RICE_DATA;
-      var all = data.records || [];
-      var filtered = all.filter(function (record) {
-        var person = (record.person_names || '').toLowerCase();
-        var site = (record.site_name || '').toLowerCase();
-        return person === 'amelia caroline hedtke' && site.indexOf('carver county historical society') !== -1;
-      });
-
-      picker.innerHTML = '';
-      if (!filtered.length) {
-        picker.innerHTML = '<option value="">No matching Amelia Caroline Hedtke entries found</option>';
-        renderRecord(null);
-      } else {
-        filtered.forEach(function (record, index) {
-          var option = document.createElement('option');
-          option.value = String(index);
-          option.textContent = (record.record_id || 'record') + ' - ' + (record.title || 'Untitled');
-          picker.appendChild(option);
-        });
-        renderRecord(filtered[0]);
-      }
-
-      datasetStatus.innerHTML = '<strong>Dataset status:</strong> Loaded ' +
-        escapeHtml(String(data.metadata.recordCount)) +
-        ' total records from ' +
-        '<a href="https://luedtkerice.j03.page/amelia-caroline-hedtke-data.js">https://luedtkerice.j03.page/amelia-caroline-hedtke-data.js</a>. ' +
-        'Generated at ' + escapeHtml(data.metadata.generatedAt) +
-        '. Current content hash: <code>' + escapeHtml(data.metadata.contentHash) + '</code>.';
-
-      var storageKey = 'luedtkerice-amelia-data-hash';
-      var previous = '';
-      try {
-        previous = localStorage.getItem(storageKey) || '';
-        localStorage.setItem(storageKey, data.metadata.contentHash);
-      } catch (error) {
-        previous = '';
-      }
-
-      if (previous && previous !== data.metadata.contentHash) {
-        modifiedStatus.innerHTML = '<strong>Modification check:</strong> The hosted data file was modified since the last time this browser loaded it. Old hash: <code>' +
-          escapeHtml(previous) + '</code>. New hash: <code>' +
-          escapeHtml(data.metadata.contentHash) + '</code>.';
-      } else if (previous === data.metadata.contentHash && previous) {
-        modifiedStatus.innerHTML = '<strong>Modification check:</strong> No change detected since the last load in this browser. Current hash: <code>' +
-          escapeHtml(data.metadata.contentHash) + '</code>.';
-      } else {
-        modifiedStatus.innerHTML = '<strong>Modification check:</strong> First load in this browser. Current hash saved as <code>' +
-          escapeHtml(data.metadata.contentHash) + '</code>.';
-      }
-
-      picker.addEventListener('change', function () {
-        var index = parseInt(picker.value, 10);
-        if (isNaN(index) || !filtered[index]) {
-          renderRecord(null);
+        if (!window.AMELIA_HEDTKE_DATA || !window.AMELIA_HEDTKE_DATA.records) {
+          status.textContent = "Data file loaded, but expected dataset variable was not found.";
           return;
         }
-        renderRecord(filtered[index]);
-      });
-    }
 
-    init();
-  })();
+        status.textContent = "Dataset loaded successfully.";
+
+        var records = window.AMELIA_HEDTKE_DATA.records;
+        var matches = records.filter(function (r) {
+          var text = JSON.stringify(r).toLowerCase();
+          return text.includes("amelia") &&
+                 text.includes("hedtke") &&
+                 text.includes("carver county historical society");
+        });
+
+        if (matches.length === 0) {
+          output.innerHTML = "<p>No matching Amelia Caroline Hedtke records were found.</p>";
+          return;
+        }
+
+        var html = "";
+        matches.forEach(function (row, index) {
+          html += "<section>";
+          html += "<h2>Record " + (index + 1) + "</h2>";
+          html += "<dl>";
+          Object.keys(row).forEach(function (key) {
+            html += "<dt><strong>" + key + "</strong></dt>";
+            html += "<dd>" + String(row[key]) + "</dd>";
+          });
+          html += "</dl>";
+          html += "</section><hr>";
+        });
+
+        output.innerHTML = html;
+      };
+
+      script.onerror = function () {
+        document.getElementById("status").textContent =
+          "Could not load https://luedtkerice.j03.page/amelia-caroline-hedtke-data.js";
+      };
+
+      document.head.appendChild(script);
+    })();
   </script>
 </body>
 </html>
