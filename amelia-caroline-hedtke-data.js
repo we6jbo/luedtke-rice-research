@@ -3,8 +3,8 @@ window.AMELIA_HEDTKE_DATA = {
   "dataset_name": "Amelia Caroline Hedtke Research Data",
   "source_csv_filename": "send-to-chatgpt.csv",
   "generated_js_filename": "amelia-caroline-hedtke-data.js",
-  "generated_local": "2026-04-18T23:51:46",
-  "source_csv_last_modified_local": "2026-04-18T23:50:54.142492",
+  "generated_local": "2026-04-18T17:51:46",
+  "source_csv_last_modified_local": "2026-04-18T17:50:54.142492",
   "source_csv_sha256": "f157c313eeb1347c65d1d19ad117a3dea918f1e577e17521c3f6d0deeaf221e0",
   "source_csv_size_bytes": 14428,
   "record_count": 36,
@@ -35,7 +35,7 @@ window.AMELIA_HEDTKE_DATA = {
   "records": [
     {
       "record_id": "R00001",
-      "added_local": "2026-04-18 22:54:45",
+      "added_local": "2026-04-18 16:54:45",
       "original_url": "https://www.familysearch.org/ark:/61903/2:1:MWHG-G3J?lang=en",
       "final_url": "https://www.familysearch.org/ark:/61903/2:1:MWHG-G3J?lang=en",
       "domain": "www.familysearch.org",
@@ -59,7 +59,7 @@ window.AMELIA_HEDTKE_DATA = {
     },
     {
       "record_id": "R00002",
-      "added_local": "2026-04-18 22:57:08",
+      "added_local": "2026-04-18 16:57:08",
       "original_url": "https://gw.geneanet.org/kristinaernst?n=luedtke&oc=&p=erdmann",
       "final_url": "https://gw.geneanet.org/kristinaernst?n=luedtke&oc=&p=erdmann",
       "domain": "gw.geneanet.org",
@@ -83,7 +83,7 @@ window.AMELIA_HEDTKE_DATA = {
     },
     {
       "record_id": "R00003",
-      "added_local": "2026-04-18 22:58:02",
+      "added_local": "2026-04-18 16:58:02",
       "original_url": "https://gw.geneanet.org/kristinaernst?n=luedtke&oc=&p=johann+christian",
       "final_url": "https://gw.geneanet.org/kristinaernst?n=luedtke&oc=&p=johann+christian",
       "domain": "gw.geneanet.org",
@@ -107,7 +107,7 @@ window.AMELIA_HEDTKE_DATA = {
     },
     {
       "record_id": "R00004",
-      "added_local": "2026-04-18 22:58:33",
+      "added_local": "2026-04-18 16:58:33",
       "original_url": "https://ancestors.familysearch.org/en/K23Z-FRJ/johann-christian-luedtke-1763-1814",
       "final_url": "https://ancestors.familysearch.org/en/K23Z-FRJ/johann-christian-luedtke-1763-1814",
       "domain": "ancestors.familysearch.org",
@@ -131,7 +131,7 @@ window.AMELIA_HEDTKE_DATA = {
     },
     {
       "record_id": "R00005",
-      "added_local": "2026-04-18 23:00:40",
+      "added_local": "2026-04-18 17:00:40",
       "original_url": "https://www.findagrave.com/memorial/75234155/emilie-hedtke",
       "final_url": "https://www.findagrave.com/memorial/75234155/emilie-hedtke",
       "domain": "www.findagrave.com",
@@ -155,7 +155,7 @@ window.AMELIA_HEDTKE_DATA = {
     },
     {
       "record_id": "R00006",
-      "added_local": "2026-04-18 23:02:07",
+      "added_local": "2026-04-18 17:02:07",
       "original_url": "https://www.familysearch.org/en/search/collection/1417683?utm_source=chatgpt.com",
       "final_url": "https://www.familysearch.org/en/search/collection/1417683?utm_source=chatgpt.com",
       "domain": "www.familysearch.org",
@@ -179,7 +179,7 @@ window.AMELIA_HEDTKE_DATA = {
     },
     {
       "record_id": "R00007",
-      "added_local": "2026-04-18 23:04:06",
+      "added_local": "2026-04-18 17:04:06",
       "original_url": "https://archive.org/details/10thcensus0628unit",
       "final_url": "https://archive.org/details/10thcensus0628unit",
       "domain": "archive.org",
@@ -203,7 +203,7 @@ window.AMELIA_HEDTKE_DATA = {
     },
     {
       "record_id": "R00008",
-      "added_local": "2026-04-18 23:05:34",
+      "added_local": "2026-04-18 17:05:34",
       "original_url": "https://www.archives.gov/research/census/online-resources?utm_source=chatgpt.com",
       "final_url": "https://www.archives.gov/research/census/online-resources?utm_source=chatgpt.com",
       "domain": "www.archives.gov",
@@ -227,7 +227,7 @@ window.AMELIA_HEDTKE_DATA = {
     },
     {
       "record_id": "R00009",
-      "added_local": "2026-04-18 23:06:23",
+      "added_local": "2026-04-18 17:06:23",
       "original_url": "https://www.familysearch.org/en/search/collection/1417683?utm_source=chatgpt.com",
       "final_url": "https://www.familysearch.org/en/search/collection/1417683?utm_source=chatgpt.com",
       "domain": "www.familysearch.org",
@@ -251,7 +251,7 @@ window.AMELIA_HEDTKE_DATA = {
     },
     {
       "record_id": "R00010",
-      "added_local": "2026-04-18 23:07:31",
+      "added_local": "2026-04-18 17:07:31",
       "original_url": "https://www.familysearch.org/en/search/catalog/1417683?utm_source=chatgpt.com",
       "final_url": "https://www.familysearch.org/en/search/catalog/1417683?utm_source=chatgpt.com",
       "domain": "www.familysearch.org",
@@ -275,7 +275,7 @@ window.AMELIA_HEDTKE_DATA = {
     },
     {
       "record_id": "R00011",
-      "added_local": "2026-04-18 23:08:37",
+      "added_local": "2026-04-18 17:08:37",
       "original_url": "https://www.familysearch.org/en/search/catalog/1417683?utm_source=chatgpt.com",
       "final_url": "https://www.familysearch.org/en/search/catalog/1417683?utm_source=chatgpt.com",
       "domain": "www.familysearch.org",
@@ -299,7 +299,7 @@ window.AMELIA_HEDTKE_DATA = {
     },
     {
       "record_id": "R00012",
-      "added_local": "2026-04-18 23:10:00",
+      "added_local": "2026-04-18 17:10:00",
       "original_url": "https://archive.org/details/10thcensus0628unit",
       "final_url": "https://archive.org/details/10thcensus0628unit",
       "domain": "archive.org",
@@ -323,7 +323,7 @@ window.AMELIA_HEDTKE_DATA = {
     },
     {
       "record_id": "R00013",
-      "added_local": "2026-04-18 23:10:50",
+      "added_local": "2026-04-18 17:10:50",
       "original_url": "https://www.familysearch.org/en/search/collection/1417683?utm_source=chatgpt.com",
       "final_url": "https://www.familysearch.org/en/search/collection/1417683?utm_source=chatgpt.com",
       "domain": "www.familysearch.org",
@@ -347,7 +347,7 @@ window.AMELIA_HEDTKE_DATA = {
     },
     {
       "record_id": "R00014",
-      "added_local": "2026-04-18 23:13:06",
+      "added_local": "2026-04-18 17:13:06",
       "original_url": "https://arbor.purplelagoon.org/tree/wc_src.html?utm_source=chatgpt.com",
       "final_url": "https://arbor.purplelagoon.org/tree/wc_src.html?utm_source=chatgpt.com",
       "domain": "arbor.purplelagoon.org",
@@ -371,7 +371,7 @@ window.AMELIA_HEDTKE_DATA = {
     },
     {
       "record_id": "R00015",
-      "added_local": "2026-04-18 23:13:50",
+      "added_local": "2026-04-18 17:13:50",
       "original_url": "https://www.archives.gov/research/census/online-resources?utm_source=chatgpt.com",
       "final_url": "https://www.archives.gov/research/census/online-resources?utm_source=chatgpt.com",
       "domain": "www.archives.gov",
@@ -395,7 +395,7 @@ window.AMELIA_HEDTKE_DATA = {
     },
     {
       "record_id": "R00016",
-      "added_local": "2026-04-18 23:14:27",
+      "added_local": "2026-04-18 17:14:27",
       "original_url": "https://www.archives.gov/research/census/using-microfilm-catalogs?utm_source=chatgpt.com",
       "final_url": "https://www.archives.gov/research/census/using-microfilm-catalogs?utm_source=chatgpt.com",
       "domain": "www.archives.gov",
@@ -419,7 +419,7 @@ window.AMELIA_HEDTKE_DATA = {
     },
     {
       "record_id": "R00017",
-      "added_local": "2026-04-18 23:15:54",
+      "added_local": "2026-04-18 17:15:54",
       "original_url": "https://gw.geneanet.org/abcjeremiahonealts?n=luedtke&oc=&p=amelia+caroline",
       "final_url": "https://gw.geneanet.org/abcjeremiahonealts?n=luedtke&oc=&p=amelia+caroline",
       "domain": "gw.geneanet.org",
@@ -443,7 +443,7 @@ window.AMELIA_HEDTKE_DATA = {
     },
     {
       "record_id": "R00018",
-      "added_local": "2026-04-18 23:16:33",
+      "added_local": "2026-04-18 17:16:33",
       "original_url": "https://ancestors.familysearch.org/en/9372-FMP/robert-richard-hedtke-1876-1954?utm_source=chatgpt.com",
       "final_url": "https://ancestors.familysearch.org/en/9372-FMP/robert-richard-hedtke-1876-1954?utm_source=chatgpt.com",
       "domain": "ancestors.familysearch.org",
@@ -467,7 +467,7 @@ window.AMELIA_HEDTKE_DATA = {
     },
     {
       "record_id": "R00019",
-      "added_local": "2026-04-18 23:17:13",
+      "added_local": "2026-04-18 17:17:13",
       "original_url": "https://ancestors.familysearch.org/en/9372-FMP/robert-richard-hedtke-1876-1954?utm_source=chatgpt.com",
       "final_url": "https://ancestors.familysearch.org/en/9372-FMP/robert-richard-hedtke-1876-1954?utm_source=chatgpt.com",
       "domain": "ancestors.familysearch.org",
@@ -491,7 +491,7 @@ window.AMELIA_HEDTKE_DATA = {
     },
     {
       "record_id": "R00020",
-      "added_local": "2026-04-18 23:17:48",
+      "added_local": "2026-04-18 17:17:48",
       "original_url": "https://ancestors.familysearch.org/en/9372-FMP/robert-richard-hedtke-1876-1954?utm_source=chatgpt.com",
       "final_url": "https://ancestors.familysearch.org/en/9372-FMP/robert-richard-hedtke-1876-1954?utm_source=chatgpt.com",
       "domain": "ancestors.familysearch.org",
@@ -515,7 +515,7 @@ window.AMELIA_HEDTKE_DATA = {
     },
     {
       "record_id": "R00021",
-      "added_local": "2026-04-18 23:18:24",
+      "added_local": "2026-04-18 17:18:24",
       "original_url": "https://ancestors.familysearch.org/en/9372-FMP/robert-richard-hedtke-1876-1954?utm_source=chatgpt.com",
       "final_url": "https://ancestors.familysearch.org/en/9372-FMP/robert-richard-hedtke-1876-1954?utm_source=chatgpt.com",
       "domain": "ancestors.familysearch.org",
@@ -539,7 +539,7 @@ window.AMELIA_HEDTKE_DATA = {
     },
     {
       "record_id": "R00022",
-      "added_local": "2026-04-18 23:19:05",
+      "added_local": "2026-04-18 17:19:05",
       "original_url": "https://ancestors.familysearch.org/en/9372-FMP/robert-richard-hedtke-1876-1954?utm_source=chatgpt.com",
       "final_url": "https://ancestors.familysearch.org/en/9372-FMP/robert-richard-hedtke-1876-1954?utm_source=chatgpt.com",
       "domain": "ancestors.familysearch.org",
@@ -563,7 +563,7 @@ window.AMELIA_HEDTKE_DATA = {
     },
     {
       "record_id": "R00023",
-      "added_local": "2026-04-18 23:20:15",
+      "added_local": "2026-04-18 17:20:15",
       "original_url": "https://www.carvercountyhistoricalsociety.org/newspaper/search.php?SearchText=hedtke&Start=201&utm_source=chatgpt.com",
       "final_url": "https://www.carvercountyhistoricalsociety.org/newspaper/search.php?SearchText=hedtke&Start=201&utm_source=chatgpt.com",
       "domain": "www.carvercountyhistoricalsociety.org",
@@ -587,7 +587,7 @@ window.AMELIA_HEDTKE_DATA = {
     },
     {
       "record_id": "R00024",
-      "added_local": "2026-04-18 23:20:48",
+      "added_local": "2026-04-18 17:20:48",
       "original_url": "https://ancestors.familysearch.org/en/9372-FMP/robert-richard-hedtke-1876-1954?utm_source=chatgpt.com",
       "final_url": "https://ancestors.familysearch.org/en/9372-FMP/robert-richard-hedtke-1876-1954?utm_source=chatgpt.com",
       "domain": "ancestors.familysearch.org",
@@ -611,7 +611,7 @@ window.AMELIA_HEDTKE_DATA = {
     },
     {
       "record_id": "R00025",
-      "added_local": "2026-04-18 23:21:22",
+      "added_local": "2026-04-18 17:21:22",
       "original_url": "https://ancestors.familysearch.org/en/9372-FMP/robert-richard-hedtke-1876-1954?utm_source=chatgpt.com",
       "final_url": "https://ancestors.familysearch.org/en/9372-FMP/robert-richard-hedtke-1876-1954?utm_source=chatgpt.com",
       "domain": "ancestors.familysearch.org",
@@ -635,7 +635,7 @@ window.AMELIA_HEDTKE_DATA = {
     },
     {
       "record_id": "R00026",
-      "added_local": "2026-04-18 23:21:56",
+      "added_local": "2026-04-18 17:21:56",
       "original_url": "https://ancestors.familysearch.org/en/9372-FMP/robert-richard-hedtke-1876-1954?utm_source=chatgpt.com",
       "final_url": "https://ancestors.familysearch.org/en/9372-FMP/robert-richard-hedtke-1876-1954?utm_source=chatgpt.com",
       "domain": "ancestors.familysearch.org",
@@ -659,7 +659,7 @@ window.AMELIA_HEDTKE_DATA = {
     },
     {
       "record_id": "R00027",
-      "added_local": "2026-04-18 23:23:47",
+      "added_local": "2026-04-18 17:17:47",
       "original_url": "https://www.findagrave.com/memorial/270347506/martin-luedtke",
       "final_url": "https://www.findagrave.com/memorial/270347506/martin-luedtke",
       "domain": "www.findagrave.com",
@@ -683,7 +683,7 @@ window.AMELIA_HEDTKE_DATA = {
     },
     {
       "record_id": "R00028",
-      "added_local": "2026-04-18 23:24:41",
+      "added_local": "2026-04-18 17:24:41",
       "original_url": "https://ancestors.familysearch.org/en/9372-FMP/robert-richard-hedtke-1876-1954?utm_source=chatgpt.com",
       "final_url": "https://ancestors.familysearch.org/en/9372-FMP/robert-richard-hedtke-1876-1954?utm_source=chatgpt.com",
       "domain": "ancestors.familysearch.org",
@@ -707,7 +707,7 @@ window.AMELIA_HEDTKE_DATA = {
     },
     {
       "record_id": "R00029",
-      "added_local": "2026-04-18 23:25:16",
+      "added_local": "2026-04-18 17:25:16",
       "original_url": "https://ancestors.familysearch.org/en/9KZL-QXY/george-carl-hedtke-1873-1925?utm_source=chatgpt.com",
       "final_url": "https://ancestors.familysearch.org/en/9KZL-QXY/george-carl-hedtke-1873-1925?utm_source=chatgpt.com",
       "domain": "ancestors.familysearch.org",
@@ -731,7 +731,7 @@ window.AMELIA_HEDTKE_DATA = {
     },
     {
       "record_id": "R00030",
-      "added_local": "2026-04-18 23:26:06",
+      "added_local": "2026-04-18 17:26:06",
       "original_url": "https://www.carvercountyhistoricalsociety.org/newspaper/search.php?SearchText=hedtke&Start=181&utm_source=chatgpt.com",
       "final_url": "https://www.carvercountyhistoricalsociety.org/newspaper/search.php?SearchText=hedtke&Start=181&utm_source=chatgpt.com",
       "domain": "www.carvercountyhistoricalsociety.org",
@@ -755,7 +755,7 @@ window.AMELIA_HEDTKE_DATA = {
     },
     {
       "record_id": "R00031",
-      "added_local": "2026-04-18 23:27:03",
+      "added_local": "2026-04-18 17:27:03",
       "original_url": "https://www.carvercountyhistoricalsociety.org/newspaper/search.php?SearchText=nee&Start=462&utm_source=chatgpt.com",
       "final_url": "https://www.carvercountyhistoricalsociety.org/newspaper/search.php?SearchText=nee&Start=462&utm_source=chatgpt.com",
       "domain": "www.carvercountyhistoricalsociety.org",
@@ -779,7 +779,7 @@ window.AMELIA_HEDTKE_DATA = {
     },
     {
       "record_id": "R00032",
-      "added_local": "2026-04-18 23:27:43",
+      "added_local": "2026-04-18 17:27:43",
       "original_url": "https://ancestors.familysearch.org/en/9372-FMP/robert-richard-hedtke-1876-1954?utm_source=chatgpt.com",
       "final_url": "https://ancestors.familysearch.org/en/9372-FMP/robert-richard-hedtke-1876-1954?utm_source=chatgpt.com",
       "domain": "ancestors.familysearch.org",
@@ -803,7 +803,7 @@ window.AMELIA_HEDTKE_DATA = {
     },
     {
       "record_id": "R00033",
-      "added_local": "2026-04-18 23:28:13",
+      "added_local": "2026-04-18 17:28:13",
       "original_url": "https://ancestors.familysearch.org/en/9KZL-QXY/george-carl-hedtke-1873-1925?utm_source=chatgpt.com",
       "final_url": "https://ancestors.familysearch.org/en/9KZL-QXY/george-carl-hedtke-1873-1925?utm_source=chatgpt.com",
       "domain": "ancestors.familysearch.org",
@@ -827,7 +827,7 @@ window.AMELIA_HEDTKE_DATA = {
     },
     {
       "record_id": "R00034",
-      "added_local": "2026-04-18 23:29:08",
+      "added_local": "2026-04-18 17:29:08",
       "original_url": "https://www.carvercountyhistoricalsociety.org/newspaper/search.php?SearchText=hedtke&Start=181&utm_source=chatgpt.com",
       "final_url": "https://www.carvercountyhistoricalsociety.org/newspaper/search.php?SearchText=hedtke&Start=181&utm_source=chatgpt.com",
       "domain": "www.carvercountyhistoricalsociety.org",
@@ -851,7 +851,7 @@ window.AMELIA_HEDTKE_DATA = {
     },
     {
       "record_id": "R00035",
-      "added_local": "2026-04-18 23:30:02",
+      "added_local": "2026-04-18 17:30:02",
       "original_url": "https://www.familysearch.org/en/search/tree/name?utm_source=chatgpt.com",
       "final_url": "https://www.familysearch.org/en/search/tree/name?utm_source=chatgpt.com",
       "domain": "www.familysearch.org",
@@ -875,7 +875,7 @@ window.AMELIA_HEDTKE_DATA = {
     },
     {
       "record_id": "R00036",
-      "added_local": "2026-04-18 23:30:24",
+      "added_local": "2026-04-18 17:30:24",
       "original_url": "https://www.familysearch.org/en/search/?utm_source=chatgpt.com",
       "final_url": "https://www.familysearch.org/en/search/?utm_source=chatgpt.com",
       "domain": "www.familysearch.org",
