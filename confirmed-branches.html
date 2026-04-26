@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Confirmed Branches</title>
+  <meta name="description" content="Believed confirmed family tree branches for the Luedtke and Rice research project.">
+  <style>
+    body {
+      margin: 0;
+      padding: 24px;
+      font-family: Arial, Helvetica, sans-serif;
+      background: #ffffff;
+      color: #222222;
+      line-height: 1.5;
+    }
+
+    .page {
+      max-width: 1360px;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    .home-link {
+      display: inline-block;
+      margin-bottom: 18px;
+      font-size: 16px;
+      color: #0645ad;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .home-link:hover {
+      text-decoration: underline;
+    }
+
+    .intro {
+      max-width: 1000px;
+      margin: 0 auto 20px auto;
+      font-size: 18px;
+    }
+
+    .branch-message {
+      margin: 16px auto 24px auto;
+      font-size: 24px;
+      font-weight: bold;
+    }
+
+    .research-image {
+      display: block;
+      width: 1360px;
+      height: 404px;
+      max-width: 100%;
+      object-fit: contain;
+      margin: 0 auto;
+    }
+  </style>
+</head>
+<body>
+  <main class="page">
+    <a class="home-link" href="https://luedtkerice.j03.page/">
+      Back to Luedtke and Rice Research Project
+    </a>
+
+    <p class="intro">
+      These are believed to be confirmed branches from my family tree on FamilyTree.
+      These research notes were made on April 26, 2026.
+    </p>
+
+    <div id="branchMessage" class="branch-message"></div>
+
+    <img
+      src="https://luedtkerice.j03.page/Research-branch.png"
+      alt="Research branch chart"
+      class="research-image"
+      width="1360"
+      height="404"
+    >
+  </main>
+
+  <script>
+    const params = new URLSearchParams(window.location.search);
+    const branch = params.get("branch");
+    const research = params.get("research");
+    const branchMessage = document.getElementById("branchMessage");
+
+    if (branch && /^FFC\d{4}$/.test(branch)) {
+      const branchNumber = branch.replace("FFC", "");
+      branchMessage.textContent = "From " + branchNumber + " branch.";
+    } else if (research && /^N[123]$/.test(research)) {
+      branchMessage.textContent = "Connection through " + research + " branch.";
+    } else {
+      branchMessage.textContent = "";
+    }
+  </script>
+</body>
+</html>
