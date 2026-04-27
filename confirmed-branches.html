@@ -387,7 +387,7 @@
     </p>
   </main>
 
-  <script>
+<script>
   const params = new URLSearchParams(window.location.search);
   const branch = params.get("branch");
   const research = params.get("research");
@@ -404,13 +404,15 @@
 
   const googleFormLink = document.getElementById("googleFormLink");
 
-  if (googleFormLink && window.location.search) {
+  if (googleFormLink) {
     const formUrl = new URL("https://docs.google.com/forms/d/e/1FAIpQLSd7Eo7mpBwnvAM-8IrwHirxylrkp5hb_mtPz1tBbwrVseqZUA/viewform");
-    formUrl.searchParams.set("usp", "publish-editor");
+    formUrl.searchParams.set("usp", "pp_url");
 
-    params.forEach((value, key) => {
-      formUrl.searchParams.set(key, value);
-    });
+    const branchOrResearchCode = branch || research || "";
+
+    if (branchOrResearchCode) {
+      formUrl.searchParams.set("entry.1020186650", branchOrResearchCode);
+    }
 
     googleFormLink.href = formUrl.toString();
   }
