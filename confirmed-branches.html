@@ -335,21 +335,23 @@
       </div>
 
       <div class="form-placeholder">
-        <p>
-          DNA cousin collaboration form:
-        </p>
+  <p>
+    DNA cousin collaboration form:
+  </p>
 
-        <p>
-          <a href="PASTE_GOOGLE_FORM_LINK_HERE">
-            Add Google Form link here
-          </a>
-        </p>
+  <p>
+    <a
+      id="googleFormLink"
+      href="https://docs.google.com/forms/d/e/1FAIpQLSd7Eo7mpBwnvAM-8IrwHirxylrkp5hb_mtPz1tBbwrVseqZUA/viewform?usp=publish-editor">
+      Open the DNA cousin collaboration form
+    </a>
+  </p>
 
-        <p>
-          This form will be used for DNA cousins, family tree researchers, and genealogy contacts who want
-          to compare notes or help identify which branch a match belongs to.
-        </p>
-      </div>
+  <p>
+    This form will be used for DNA cousins, family tree researchers, and genealogy contacts who want
+    to compare notes or help identify which branch a match belongs to.
+  </p>
+</div>
     </section>
 
     <section class="machine-readable">
@@ -386,19 +388,32 @@
   </main>
 
   <script>
-    const params = new URLSearchParams(window.location.search);
-    const branch = params.get("branch");
-    const research = params.get("research");
-    const branchMessage = document.getElementById("branchMessage");
+  const params = new URLSearchParams(window.location.search);
+  const branch = params.get("branch");
+  const research = params.get("research");
+  const branchMessage = document.getElementById("branchMessage");
 
-    if (branch && /^FFC\d{4}$/.test(branch)) {
-      const branchNumber = branch.replace("FFC", "");
-      branchMessage.textContent = "From " + branchNumber + " branch.";
-    } else if (research && /^N[123]$/.test(research)) {
-      branchMessage.textContent = "Connection through " + research + " branch.";
-    } else {
-      branchMessage.textContent = "";
-    }
-  </script>
+  if (branch && /^FFC\d{4}$/.test(branch)) {
+    const branchNumber = branch.replace("FFC", "");
+    branchMessage.textContent = "From " + branchNumber + " branch.";
+  } else if (research && /^N[123]$/.test(research)) {
+    branchMessage.textContent = "Connection through " + research + " branch.";
+  } else {
+    branchMessage.textContent = "";
+  }
+
+  const googleFormLink = document.getElementById("googleFormLink");
+
+  if (googleFormLink && window.location.search) {
+    const formUrl = new URL("https://docs.google.com/forms/d/e/1FAIpQLSd7Eo7mpBwnvAM-8IrwHirxylrkp5hb_mtPz1tBbwrVseqZUA/viewform");
+    formUrl.searchParams.set("usp", "publish-editor");
+
+    params.forEach((value, key) => {
+      formUrl.searchParams.set(key, value);
+    });
+
+    googleFormLink.href = formUrl.toString();
+  }
+</script>
 </body>
 </html>
