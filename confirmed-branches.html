@@ -391,6 +391,16 @@
   const params = new URLSearchParams(window.location.search);
   const branch = params.get("branch");
   const research = params.get("research");
+
+  /*
+    Preferred:
+      recall_source=961114
+
+    Backward-compatible:
+      recall_sources=961114
+  */
+  const recallSource = params.get("recall_source") || params.get("recall_sources") || "";
+
   const branchMessage = document.getElementById("branchMessage");
 
   if (branch && /^FFC\d{4}$/.test(branch)) {
@@ -406,13 +416,25 @@
 
   if (googleFormLink) {
     const formUrl = new URL("https://docs.google.com/forms/d/e/1FAIpQLSd7Eo7mpBwnvAM-8IrwHirxylrkp5hb_mtPz1tBbwrVseqZUA/viewform");
+
+    const researchCode = branch || research || "";
+
     formUrl.searchParams.set("usp", "pp_url");
 
-    const branchOrResearchCode = branch || research || "";
-
-    if (branchOrResearchCode) {
-      formUrl.searchParams.set("entry.1020186650", branchOrResearchCode);
+    if (researchCode) {
+      formUrl.searchParams.set("entry.1020186650", researchCode);
     }
+
+    if (recallSource) {
+      formUrl.searchParams.set("entry.917367224", recallSource);
+    }
+
+    formUrl.searchParams.set("entry.779520841", "nothing");
+    formUrl.searchParams.set(
+      "entry.1952550893",
+      "I have verified that no sensitive information has been entered into this form"
+    );
+    formUrl.searchParams.set("entry.1177727202", "No");
 
     googleFormLink.href = formUrl.toString();
   }
