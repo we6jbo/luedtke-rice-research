@@ -308,6 +308,17 @@
         another name and should be verified before being treated as final.
       </div>
 
+
+      <h3>Public Blog Title and Spoken Text</h3>
+
+      <p>
+        <strong>Suggested title:</strong> TG891052: McCabe, McAvoy, and McEvoy Evidence Bridge
+      </p>
+
+      <p>
+        <strong>300-character spoken text draft:</strong> Today is May 2, 2026. TG891052: McCabe, McAvoy, McEvoy Evidence Bridge. Ahnentafel 34 James McAvoy, 17 Mar 1833 Ireland-24 Oct 1906 Scott, Allegheny, PA; 58 John McAvoy, about 1797 Ireland; 69 Sarah Ann McAvoy, about 1797 Newry, Ireland.
+      </p>
+
       <h3>Ahnentafel Focus People</h3>
 
       <ul>
@@ -478,6 +489,8 @@
         <li>Confirm whether McAvoy, McEvoy, McVoy, and McCabe spellings are separate families, record variants, or connected branches.</li>
         <li>Collect clear source screenshots or downloads for each parent-child link.</li>
         <li>Separate direct evidence from tree-based clues so the page looks professional and does not overstate proof.</li>
+        <li>Add record-type labels for each screenshot: birth or baptism, marriage, census, passenger list, death certificate, or burial.</li>
+        <li>Add whether each source proves identity, location, date, parent link, spouse link, immigration, or only a possible name clue.</li>
       </ul>
 
       <p>
@@ -772,8 +785,8 @@
 
 <script>
   const params = new URLSearchParams(window.location.search);
-  const branch = params.get("branch");
-  const research = params.get("research");
+  const branch = (params.get("branch") || "").trim().toUpperCase();
+  const research = (params.get("research") || "").trim().toUpperCase();
 
   /*
     Preferred:
@@ -782,7 +795,7 @@
     Backward-compatible:
       recall_sources=740112
   */
-  const recallSource = params.get("recall_source") || params.get("recall_sources") || "";
+  const recallSource = ((params.get("recall_source") || params.get("recall_sources") || "")).trim();
 
   const branchMessage = document.getElementById("branchMessage");
   const mccabeBranchDetail = document.getElementById("mccabeBranchDetail");
@@ -808,6 +821,7 @@
     mccabeBranchDetail.style.display = "block";
     branchMessage.textContent = "From 4829 branch: McCabe, McAvoy, and McEvoy evidence bridge.";
     document.title = "TG891052 McCabe, McAvoy, and McEvoy Evidence Bridge";
+    mccabeBranchDetail.scrollIntoView({ behavior: "smooth", block: "start" });
   }
 
   /*
@@ -821,6 +835,7 @@
     sloanBranchDetail.style.display = "block";
     branchMessage.textContent = "From 1736 branch: Sloan, O'Hare, McKowen / McKewan, and Fitzpatrick research notes.";
     document.title = "FFC1736 Sloan, O'Hare, McKowen, McKewan, and Fitzpatrick Research Notes";
+    sloanBranchDetail.scrollIntoView({ behavior: "smooth", block: "start" });
   }
 
   const googleFormLink = document.getElementById("googleFormLink");
